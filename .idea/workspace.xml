@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="721542a7-44f2-4a3d-89f3-9b969cc81ced" name="Default Changelist" comment="添加验证码骨架">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="721542a7-44f2-4a3d-89f3-9b969cc81ced" name="Default Changelist" comment="nacos注册">
+      <change afterPath="$PROJECT_DIR$/service-verificationcode/src/main/java/com/mashibing/serviceverificationcode/controller/NumberCodeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/ApiPassengerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/ApiPassengerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/ApiPassengerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/ApiPassengerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683272613056</updated>
       <workItem from="1683272614297" duration="5811000" />
-      <workItem from="1683334885463" duration="5089000" />
+      <workItem from="1683334885463" duration="6449000" />
     </task>
     <task id="LOCAL-00001" summary="添加验证码骨架">
       <created>1683336286196</created>
@@ -115,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683336286196</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="nacos注册">
+      <created>1683342032698</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683342032698</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +134,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加验证码骨架" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加验证码骨架" />
+    <MESSAGE value="nacos注册" />
+    <option name="LAST_COMMIT_MESSAGE" value="nacos注册" />
   </component>
 </project>
