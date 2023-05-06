@@ -2,9 +2,89 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="ieop" />
+      <option name="name" value="iweb" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/repositories/iUAP/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Maven Central repository" />
       <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="nexus" />
+      <option name="name" value="Nexus" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="iUAP-Stagings" />
+      <option name="name" value="iUAP-Stagings" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/repositories/iUAP-Stagings/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="yxy-Release" />
+      <option name="name" value="yxy-Release" />
+      <option name="url" value="http://maven.yonyou.com/nexus/repository/yxy-Release/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="releases" />
+      <option name="name" value="releases" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/repositories/releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central-m1" />
+      <option name="name" value="central-m1" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/shadows/central-m1" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="iUAP-Snapshots" />
+      <option name="name" value="iweb" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/repositories/iUAP-Snapshots" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="iWeb" />
+      <option name="name" value="iWeb" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/repositories/iWeb/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Nuxeo" />
+      <option name="name" value="Nuxeo" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/repositories/Nuxeo" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="ecmp-Snapshots" />
+      <option name="name" value="ecmp-Snapshots" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/repositories/ecmp-Snapshots/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="thirdparty" />
+      <option name="name" value="thirdparty" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/repositories/thirdparty" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="snapshots" />
+      <option name="name" value="snapshots" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/repositories/snapshots" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="UAP_WEB2.0" />
+      <option name="name" value="UAP_WEB2.0" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/repositories/UAP_WEB2.0" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="apache-snapshots" />
+      <option name="name" value="apache-snapshots" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/repositories/apache-snapshots" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="central" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="3rdsnapshot" />
+      <option name="name" value="3rdsnapshot" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/repositories/3rdsnapshot" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="jboss.community" />
@@ -15,6 +95,21 @@
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="occ-releases" />
+      <option name="name" value="occ-releases" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/repositories/occ-releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="yxy-Snapshot" />
+      <option name="name" value="yxy-Snapshot" />
+      <option name="url" value="http://maven.yonyou.com/nexus/repository/yxy-Snapshot/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="occ-snapshots" />
+      <option name="name" value="occ-snapshots" />
+      <option name="url" value="http://maven.yonyou.com/nexus/content/repositories/occ-snapshots/" />
     </remote-repository>
   </component>
 </project>
