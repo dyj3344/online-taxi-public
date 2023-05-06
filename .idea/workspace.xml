@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="721542a7-44f2-4a3d-89f3-9b969cc81ced" name="Default Changelist" comment="nacos注册">
-      <change afterPath="$PROJECT_DIR$/service-verificationcode/src/main/java/com/mashibing/serviceverificationcode/controller/NumberCodeController.java" afterDir="false" />
+    <list default="true" id="721542a7-44f2-4a3d-89f3-9b969cc81ced" name="Default Changelist" comment="数据校验骨架编写">
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/constant/CommonStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/dto/ResponseResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/response/NumberCodeResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-verificationcode/src/test/java/com/mashibing/serviceverificationcode/test/NumberCodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-verificationcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-verificationcode/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-verificationcode/src/main/java/com/mashibing/serviceverificationcode/controller/NumberCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-verificationcode/src/main/java/com/mashibing/serviceverificationcode/controller/NumberCodeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -40,6 +50,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.14285713" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager" selected="Spring Boot.ServiceVerificationcodeApplication">
@@ -52,6 +65,22 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumberCodeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-verificationcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mashibing.serviceverificationcode.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mashibing.serviceverificationcode.test" />
+      <option name="MAIN_CLASS_NAME" value="com.mashibing.serviceverificationcode.test.NumberCodeTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,8 +113,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ServiceVerificationcodeApplication" />
         <item itemvalue="Spring Boot.ApiPassengerApplication" />
+        <item itemvalue="Spring Boot.ServiceVerificationcodeApplication" />
+        <item itemvalue="JUnit.NumberCodeTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -98,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683272613056</updated>
       <workItem from="1683272614297" duration="5811000" />
-      <workItem from="1683334885463" duration="6449000" />
+      <workItem from="1683334885463" duration="10339000" />
     </task>
     <task id="LOCAL-00001" summary="添加验证码骨架">
       <created>1683336286196</created>
@@ -114,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683342032698</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="数据校验骨架编写">
+      <created>1683343157873</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683343157873</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +172,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加验证码骨架" />
     <MESSAGE value="nacos注册" />
-    <option name="LAST_COMMIT_MESSAGE" value="nacos注册" />
+    <MESSAGE value="数据校验骨架编写" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据校验骨架编写" />
   </component>
 </project>
