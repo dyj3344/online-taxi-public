@@ -40,9 +40,9 @@ public class UserSerivce {
             LocalDateTime localDateTime= LocalDateTime.now();
             passengerUser.setGmtCreate(localDateTime);
             passengerUser.setGmtModified(localDateTime);
-            insert = passengerUserMapper.insert(passengerUser);
+             passengerUserMapper.insert(passengerUser);
         }
 
-        return ResponseResult.success(insert,"插入成功,成功条数");
+        return ResponseResult.success();
     }
 }

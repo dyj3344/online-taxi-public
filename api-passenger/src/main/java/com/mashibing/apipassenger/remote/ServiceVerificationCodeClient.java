@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface ServiceVerificationCodeClient {
 
     @GetMapping("/numberCode/{size}")
-
     public ResponseResult<NumberCodeResponse> getNumberCode(@PathVariable("size")int size);
 
 }

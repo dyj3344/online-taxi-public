@@ -1,5 +1,6 @@
 package com.mashibing.apipassenger.service;
 
+import com.mashibing.apipassenger.remote.ServicePassengerUserClient;
 import com.mashibing.apipassenger.remote.ServiceVerificationCodeClient;
 import com.mashibing.common.dto.VerificationDto;
 import com.mashibing.common.constant.CommonStatusEnum;
@@ -20,6 +21,9 @@ public class VerificationCodeSerivce {
 
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
+
+    @Autowired
+    private ServicePassengerUserClient servicePassengerUserClient;
 
     private static  String VERIFICATIONCODEREF="passenger-verification-code-";
 
@@ -57,7 +61,7 @@ public class VerificationCodeSerivce {
             return ResponseResult.failed(CommonStatusEnum.VERIFICATION_CODE_ERROR.getCode(),CommonStatusEnum.VERIFICATION_CODE_ERROR.getValue());
         }
         //判断原来是否有用户,并进行处理
-
+        servicePassengerUserClient.logOrReg(verificationDto);
 
         //颁发令牌
         TokenResponse tokenResponse =new TokenResponse();
