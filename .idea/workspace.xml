@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="721542a7-44f2-4a3d-89f3-9b969cc81ced" name="Default Changelist" comment="model重建">
+    <list default="true" id="721542a7-44f2-4a3d-89f3-9b969cc81ced" name="Default Changelist" comment="声明错误修改">
+      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/remote/ServiceVerificationCodeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/ApiPassengerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/ApiPassengerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-verificationcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-verificationcode/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/controller/VerificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/controller/VerificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/service/VerificationCodeSerivce.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/service/VerificationCodeSerivce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/ApiPassengerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/ApiPassengerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/controller/VerificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/controller/VerificationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/service/VerificationCodeSerivce.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/service/VerificationCodeSerivce.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-verificationcode/src/main/java/com/mashibing/verficationcode/controller/NumberCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-verificationcode/src/main/java/com/mashibing/verficationcode/controller/NumberCodeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,14 +40,8 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.6.3" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="MavenRunner">
+    <option name="skipTests" value="true" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="2PMgxM1dt9OQ0P8y3TLpRTVxaWN" />
@@ -66,7 +65,7 @@
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.14285713" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -75,14 +74,16 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.VerificationCodeController">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.ApiPassengerApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,19 +117,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceVerificationcodeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="service-verificationcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mashibing.serviceverificationcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mashibing.serviceverificationcode.ServiceVerificationcodeApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="VerificationCodeController" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="service-verificationcode" />
       <extension name="coverage">
@@ -142,11 +130,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.NumberCodeTest.test" />
+      <item itemvalue="Spring Boot.VerificationCodeController" />
+      <item itemvalue="Spring Boot.ApiPassengerApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.VerificationCodeController" />
-        <item itemvalue="Spring Boot.ServiceVerificationcodeApplication" />
         <item itemvalue="Spring Boot.ApiPassengerApplication" />
+        <item itemvalue="Spring Boot.VerificationCodeController" />
         <item itemvalue="JUnit.NumberCodeTest.test" />
       </list>
     </recent_temporary>
@@ -172,7 +164,12 @@
       <workItem from="1683507330114" duration="1281000" />
       <workItem from="1683508864451" duration="2706000" />
       <workItem from="1683529626184" duration="2737000" />
-      <workItem from="1683618283931" duration="1512000" />
+      <workItem from="1683618283931" duration="2602000" />
+      <workItem from="1683621074705" duration="1746000" />
+      <workItem from="1683623902438" duration="296000" />
+      <workItem from="1683624272097" duration="528000" />
+      <workItem from="1683679091645" duration="1411000" />
+      <workItem from="1683680526131" duration="487000" />
     </task>
     <task id="LOCAL-00001" summary="添加验证码骨架">
       <created>1683336286196</created>
@@ -216,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683359998503</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="声明错误修改">
+      <created>1683619988648</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683619988648</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +244,18 @@
     <MESSAGE value="数据校验骨架编写" />
     <MESSAGE value="添加公共类" />
     <MESSAGE value="model重建" />
-    <option name="LAST_COMMIT_MESSAGE" value="model重建" />
+    <MESSAGE value="声明错误修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="声明错误修改" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

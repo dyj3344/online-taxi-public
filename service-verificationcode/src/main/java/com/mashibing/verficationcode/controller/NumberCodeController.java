@@ -14,6 +14,7 @@ public class NumberCodeController {
        int data=(int)((Math.random()*9+1)*Math.pow(10,size-1));
         NumberCodeResponse numberCodeResponse=new NumberCodeResponse();
         numberCodeResponse.setNumberCode(data);
+        System.out.println("generator code:"+data);
         return ResponseResult.success(numberCodeResponse);
     }
 }
