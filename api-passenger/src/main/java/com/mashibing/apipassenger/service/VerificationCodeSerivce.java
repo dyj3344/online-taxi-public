@@ -1,12 +1,11 @@
 package com.mashibing.apipassenger.service;
 
 import com.mashibing.apipassenger.remote.ServiceVerificationCodeClient;
-import com.mashibing.apipassenger.request.VerificationDto;
+import com.mashibing.common.dto.VerificationDto;
 import com.mashibing.common.constant.CommonStatusEnum;
 import com.mashibing.common.dto.ResponseResult;
 import com.mashibing.common.dto.TokenResponse;
 import com.mashibing.common.response.NumberCodeResponse;
-import net.sf.json.JSONObject;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;

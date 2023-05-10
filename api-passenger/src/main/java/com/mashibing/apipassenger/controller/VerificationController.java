@@ -1,7 +1,6 @@
 package com.mashibing.apipassenger.controller;
 
-import com.mashibing.apipassenger.remote.ServiceVerificationCodeClient;
-import com.mashibing.apipassenger.request.VerificationDto;
+import com.mashibing.common.dto.VerificationDto;
 import com.mashibing.apipassenger.service.VerificationCodeSerivce;
 import com.mashibing.common.dto.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;

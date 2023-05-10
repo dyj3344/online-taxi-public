@@ -4,28 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="721542a7-44f2-4a3d-89f3-9b969cc81ced" name="Default Changelist" comment="添加openfeign">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/dto/TokenResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-passenger-user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/ServicePassengerUserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="721542a7-44f2-4a3d-89f3-9b969cc81ced" name="Default Changelist" comment="添加验证码校验,以及创建乘客服务">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/dto/PassengerUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/mapper/PassengerUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/service/UserSerivce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/controller/VerificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/controller/VerificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/request/VerificationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/request/VerificationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/request/VerificationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/dto/VerificationDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/service/VerificationCodeSerivce.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/service/VerificationCodeSerivce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/controller/VerificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/controller/VerificationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/request/VerificationDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/request/VerificationDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/request/VerificationDto.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/service/VerificationCodeSerivce.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/service/VerificationCodeSerivce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/constant/CommonStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/dto/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/dto/ResponseResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-passenger-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/ServicePassengerUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/ServicePassengerUserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-verificationcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-verificationcode/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +36,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -62,6 +62,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -76,7 +77,12 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.14285713" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\online-taxi-public\service-passenger-user\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -86,17 +92,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ServicePassengerUserApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="NumberCodeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-verificationcode" />
       <extension name="coverage">
@@ -194,7 +189,8 @@
       <workItem from="1683624272097" duration="528000" />
       <workItem from="1683679091645" duration="1411000" />
       <workItem from="1683680526131" duration="4878000" />
-      <workItem from="1683686507628" duration="1742000" />
+      <workItem from="1683686507628" duration="11907000" />
+      <workItem from="1683704902906" duration="901000" />
     </task>
     <task id="LOCAL-00001" summary="添加验证码骨架">
       <created>1683336286196</created>
@@ -252,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683681335294</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="添加验证码校验,以及创建乘客服务">
+      <created>1683688385789</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683688385789</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +281,8 @@
     <MESSAGE value="model重建" />
     <MESSAGE value="声明错误修改" />
     <MESSAGE value="添加openfeign" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加openfeign" />
+    <MESSAGE value="添加验证码校验,以及创建乘客服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加验证码校验,以及创建乘客服务" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
