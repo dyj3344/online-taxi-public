@@ -4,17 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="721542a7-44f2-4a3d-89f3-9b969cc81ced" name="Default Changelist" comment="声明错误修改">
-      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/remote/ServiceVerificationCodeClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="721542a7-44f2-4a3d-89f3-9b969cc81ced" name="Default Changelist" comment="添加openfeign">
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/dto/TokenResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/ServicePassengerUserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-passenger-user/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/controller/VerificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/controller/VerificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/request/VerificationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/request/VerificationDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/service/VerificationCodeSerivce.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/service/VerificationCodeSerivce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/ApiPassengerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/ApiPassengerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/controller/VerificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/controller/VerificationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/request/VerificationDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/request/VerificationDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/service/VerificationCodeSerivce.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/service/VerificationCodeSerivce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-verificationcode/src/main/java/com/mashibing/verficationcode/controller/NumberCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-verificationcode/src/main/java/com/mashibing/verficationcode/controller/NumberCodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/constant/CommonStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/dto/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/dto/ResponseResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +72,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service-passenger-user/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.14285713" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -74,16 +85,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiPassengerApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.ServicePassengerUserApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,6 +126,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServicePassengerUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-passenger-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mashibing.servicepassenger.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mashibing.servicepassenger.ServicePassengerUserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VerificationCodeController" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="service-verificationcode" />
       <extension name="coverage">
@@ -134,9 +156,11 @@
       <item itemvalue="JUnit.NumberCodeTest.test" />
       <item itemvalue="Spring Boot.VerificationCodeController" />
       <item itemvalue="Spring Boot.ApiPassengerApplication" />
+      <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
         <item itemvalue="Spring Boot.ApiPassengerApplication" />
         <item itemvalue="Spring Boot.VerificationCodeController" />
         <item itemvalue="JUnit.NumberCodeTest.test" />
@@ -169,7 +193,8 @@
       <workItem from="1683623902438" duration="296000" />
       <workItem from="1683624272097" duration="528000" />
       <workItem from="1683679091645" duration="1411000" />
-      <workItem from="1683680526131" duration="487000" />
+      <workItem from="1683680526131" duration="4878000" />
+      <workItem from="1683686507628" duration="1742000" />
     </task>
     <task id="LOCAL-00001" summary="添加验证码骨架">
       <created>1683336286196</created>
@@ -220,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683619988648</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="添加openfeign">
+      <created>1683681335293</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683681335294</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +277,8 @@
     <MESSAGE value="添加公共类" />
     <MESSAGE value="model重建" />
     <MESSAGE value="声明错误修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="声明错误修改" />
+    <MESSAGE value="添加openfeign" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加openfeign" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

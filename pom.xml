@@ -17,6 +17,7 @@
         <module>api-passenger</module>
         <module>common</module>
         <module>service-verificationcode</module>
+        <module>service-passenger-user</module>
     </modules>
     <packaging>pom</packaging>
 

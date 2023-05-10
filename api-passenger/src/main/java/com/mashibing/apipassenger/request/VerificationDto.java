@@ -1,15 +1,15 @@
 package com.mashibing.apipassenger.request;
 
 
+import lombok.Data;
+
+@Data
 public class VerificationDto {
 
     private String passengerPhone;
 
-    public String getPassengerPhone() {
-        return passengerPhone;
-    }
+    private String verificationCode;
 
-    public void setPassengerPhone(String passengerPhone) {
-        this.passengerPhone = passengerPhone;
-    }
+
+
 }
