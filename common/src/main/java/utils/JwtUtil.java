@@ -3,6 +3,8 @@ package utils;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTCreator;
 import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.interfaces.DecodedJWT;
+import com.mashibing.common.dto.TokenResult;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -20,6 +22,11 @@ public class JwtUtil {
 
     private final static  String SIGN="!uhjS&2j1";
 
+    private final static  String JWT_KEY_PHONE="Phone";
+
+    //乘客是1,司机是2
+    private final static  String JWT_KEY_IDENITY="idenity";
+
      /**
       *
       * 生成token
@@ -29,7 +36,10 @@ public class JwtUtil {
       * @author 53527
       * @date 2023/5/10 17:18
       */
-    public static String  generatorToken(Map<String,String> map){
+    public static String  generatorToken(String passengerPhone,String identity){
+        Map<String,String> map =new HashMap<>();
+        map.put(JWT_KEY_PHONE,passengerPhone);
+        map.put(JWT_KEY_IDENITY,identity);
         //定义过期时间
         Calendar calendar=Calendar.getInstance();
         calendar.add(Calendar.DATE,1);
@@ -46,10 +56,22 @@ public class JwtUtil {
     }
 
     public static void main(String[] args) {
-        Map<String,String> map =new HashMap<>();
-        map.put("name","张三");
-        map.put("age","12");
-        System.out.println( "生成的token,"+generatorToken(map));
+        String token = generatorToken("13098782940", "1");
+        System.out.println("生成的token:"+token);
+        TokenResult tokenResult = parseToken(token);
+        System.out.println("手机号是:+"+tokenResult.getPhone()+",身份是:"+tokenResult.getIdentity());
+
     }
     //解析token
+
+    public static TokenResult  parseToken(String token){
+        DecodedJWT verify = JWT.require(Algorithm.HMAC256(SIGN)).build().verify(token);
+        String phone = verify.getClaim(JWT_KEY_PHONE).toString();
+        String identity = verify.getClaim(JWT_KEY_IDENITY).toString();
+        TokenResult tokenResult= new TokenResult();
+        tokenResult.setPhone(phone);
+        tokenResult.setIdentity(identity);
+
+        return tokenResult;
+    }
 }

@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="721542a7-44f2-4a3d-89f3-9b969cc81ced" name="Default Changelist" comment="添加服务用户人">
-      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/remote/ServicePassengerUserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/utils/JwtUtil.java" afterDir="false" />
+    <list default="true" id="721542a7-44f2-4a3d-89f3-9b969cc81ced" name="Default Changelist" comment="添加jwt生成token">
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/constant/IdentityConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/dto/TokenResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/remote/ServiceVerificationCodeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/remote/ServiceVerificationCodeClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/service/VerificationCodeSerivce.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/service/VerificationCodeSerivce.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/service/VerificationCodeSerivce.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/service/VerificationCodeSerivce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/service/UserSerivce.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/service/UserSerivce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/utils/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/utils/JwtUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -93,15 +91,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,18 +158,18 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.JwtUtil" />
       <item itemvalue="JUnit.NumberCodeTest.test" />
       <item itemvalue="Spring Boot.VerificationCodeController" />
       <item itemvalue="Spring Boot.ApiPassengerApplication" />
       <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
-      <item itemvalue="Application.JwtUtil" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JwtUtil" />
-        <item itemvalue="Spring Boot.ApiPassengerApplication" />
         <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
+        <item itemvalue="Spring Boot.ApiPassengerApplication" />
         <item itemvalue="Spring Boot.VerificationCodeController" />
+        <item itemvalue="Application.JwtUtil" />
         <item itemvalue="JUnit.NumberCodeTest.test" />
       </list>
     </recent_temporary>
@@ -206,7 +202,8 @@
       <workItem from="1683679091645" duration="1411000" />
       <workItem from="1683680526131" duration="4878000" />
       <workItem from="1683686507628" duration="11907000" />
-      <workItem from="1683704902906" duration="3914000" />
+      <workItem from="1683704902906" duration="4369000" />
+      <workItem from="1683765811998" duration="2218000" />
     </task>
     <task id="LOCAL-00001" summary="添加验证码骨架">
       <created>1683336286196</created>
@@ -278,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683706583550</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="添加jwt生成token">
+      <created>1683710801513</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683710801513</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +310,8 @@
     <MESSAGE value="添加openfeign" />
     <MESSAGE value="添加验证码校验,以及创建乘客服务" />
     <MESSAGE value="添加服务用户人" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加服务用户人" />
+    <MESSAGE value="添加jwt生成token" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加jwt生成token" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

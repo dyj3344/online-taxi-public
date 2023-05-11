@@ -2,6 +2,7 @@ package com.mashibing.apipassenger.service;
 
 import com.mashibing.apipassenger.remote.ServicePassengerUserClient;
 import com.mashibing.apipassenger.remote.ServiceVerificationCodeClient;
+import com.mashibing.common.constant.IdentityConstant;
 import com.mashibing.common.dto.VerificationDto;
 import com.mashibing.common.constant.CommonStatusEnum;
 import com.mashibing.common.dto.ResponseResult;
@@ -11,6 +12,7 @@ import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
+import utils.JwtUtil;
 
 import java.util.concurrent.TimeUnit;
 
@@ -64,8 +66,9 @@ public class VerificationCodeSerivce {
         servicePassengerUserClient.logOrReg(verificationDto);
 
         //颁发令牌
+        String token  = JwtUtil.generatorToken("passengerPhone", IdentityConstant.PASSENGER_IDENTITY);
         TokenResponse tokenResponse =new TokenResponse();
-        tokenResponse.setToken("token value");
+        tokenResponse.setToken(token);
         return ResponseResult.success(tokenResponse);
     }
     /**
