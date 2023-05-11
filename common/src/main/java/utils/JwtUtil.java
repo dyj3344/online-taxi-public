@@ -3,6 +3,9 @@ package utils;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTCreator;
 import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.exceptions.AlgorithmMismatchException;
+import com.auth0.jwt.exceptions.SignatureVerificationException;
+import com.auth0.jwt.exceptions.TokenExpiredException;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.mashibing.common.dto.TokenResult;
 
@@ -27,6 +30,10 @@ public class JwtUtil {
     //乘客是1,司机是2
     private final static  String JWT_KEY_IDENITY="idenity";
 
+    private final static  String JWT_TOKEN_TYPE="tokenType";
+
+    private final static  String JWT_TOKEN_TIME="tokenType";
+
      /**
       *
       * 生成token
@@ -36,42 +43,56 @@ public class JwtUtil {
       * @author 53527
       * @date 2023/5/10 17:18
       */
-    public static String  generatorToken(String passengerPhone,String identity){
+    public static String  generatorToken(String passengerPhone,String identity,String tokenType){
         Map<String,String> map =new HashMap<>();
         map.put(JWT_KEY_PHONE,passengerPhone);
         map.put(JWT_KEY_IDENITY,identity);
-        //定义过期时间
-        Calendar calendar=Calendar.getInstance();
-        calendar.add(Calendar.DATE,1);
-        Date time = calendar.getTime();
+        map.put(JWT_TOKEN_TYPE,tokenType);
+
+        //防止生成token一样
+        map.put(JWT_TOKEN_TIME,Calendar.getInstance().toString());
         JWTCreator.Builder builder= JWT.create();
         map.forEach((k,v)->{
             builder.withClaim(k,v);
         });
-        //整合过期时间
-        builder.withExpiresAt(time);
         //生成token
         String sign = builder.sign(Algorithm.HMAC256(SIGN));
         return sign;
     }
 
     public static void main(String[] args) {
-        String token = generatorToken("13098782940", "1");
-        System.out.println("生成的token:"+token);
-        TokenResult tokenResult = parseToken(token);
-        System.out.println("手机号是:+"+tokenResult.getPhone()+",身份是:"+tokenResult.getIdentity());
 
     }
     //解析token
 
     public static TokenResult  parseToken(String token){
         DecodedJWT verify = JWT.require(Algorithm.HMAC256(SIGN)).build().verify(token);
-        String phone = verify.getClaim(JWT_KEY_PHONE).toString();
-        String identity = verify.getClaim(JWT_KEY_IDENITY).toString();
+        String phone = verify.getClaim(JWT_KEY_PHONE).asString();
+        String identity = verify.getClaim(JWT_KEY_IDENITY).asString();
         TokenResult tokenResult= new TokenResult();
         tokenResult.setPhone(phone);
         tokenResult.setIdentity(identity);
 
+        return tokenResult;
+    }
+
+    /**
+     *
+     * 校验token是否解析成功
+     * @param String token
+     * @return {@link TokenResult}
+     * @throws
+     * @author 53527
+     * @date 2023/5/11 13:59
+     */
+    public static TokenResult checkToken(String token){
+        
+        TokenResult tokenResult= null;
+        try {
+            tokenResult = JwtUtil.parseToken(token);
+        }catch (Exception e){
+            return null;
+        }
         return tokenResult;
     }
 }

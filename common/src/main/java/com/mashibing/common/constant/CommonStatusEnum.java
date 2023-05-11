@@ -1,8 +1,13 @@
 package com.mashibing.common.constant;
 
 public enum CommonStatusEnum {
-    //验证码错误提示:1000-1099
+    //token错误1100-1100
+    /*
+    * token错误
+    * */
+    TOKEN_ERROR(1199,"token错误"),
 
+    //验证码错误提示:1000-1099
     /*
      * 验证码不正确
      * */
