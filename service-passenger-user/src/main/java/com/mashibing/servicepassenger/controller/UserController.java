@@ -5,9 +5,7 @@ import com.mashibing.common.dto.VerificationDto;
 import com.mashibing.servicepassenger.service.UserSerivce;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.Assert;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class UserController {
@@ -31,5 +29,21 @@ public class UserController {
         System.out.println("当前登陆手机号:"+passengerPhone);
 
         return userSerivce.logOrRegsiter(passengerPhone);
+    }
+
+    /**
+     *
+     * 根据手机号获取用户
+     * @param VerificationDto verificationDto 手机号
+     * @return {@link ResponseResult}
+     * @throws
+     * @author 53527
+     * @date 2023/5/11 15:15
+     */
+    @GetMapping("/user/{phone}")
+    public ResponseResult getUser(@PathVariable("phone") String phone){
+        Assert.notNull(phone,"手机号码不能为空");
+
+        return userSerivce.getUser(phone);
     }
 }

@@ -1,7 +1,7 @@
 package com.mashibing.servicepassenger.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.mashibing.servicepassenger.dto.PassengerUser;
+import com.mashibing.common.dto.PassengerUser;
 import org.springframework.stereotype.Repository;
 
 /**

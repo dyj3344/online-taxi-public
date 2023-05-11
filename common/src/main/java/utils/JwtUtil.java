@@ -50,7 +50,7 @@ public class JwtUtil {
         map.put(JWT_TOKEN_TYPE,tokenType);
 
         //防止生成token一样
-        map.put(JWT_TOKEN_TIME,Calendar.getInstance().toString());
+        map.put(JWT_TOKEN_TIME,Calendar.getInstance().getTime().toString());
         JWTCreator.Builder builder= JWT.create();
         map.forEach((k,v)->{
             builder.withClaim(k,v);

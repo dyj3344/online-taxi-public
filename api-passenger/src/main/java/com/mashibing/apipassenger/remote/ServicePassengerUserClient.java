@@ -21,5 +21,6 @@ public interface ServicePassengerUserClient {
     @PostMapping("/user")
     public ResponseResult logOrReg(@RequestBody VerificationDto verificationDto);
 
-
+    @GetMapping("/user/{phone}")
+    public ResponseResult getUser(@PathVariable("phone") String phone);
 }

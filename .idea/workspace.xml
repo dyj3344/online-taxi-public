@@ -4,21 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="721542a7-44f2-4a3d-89f3-9b969cc81ced" name="Default Changelist" comment="校验用户成功后返回token">
-      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/controller/TokenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/interceptor/InterceptorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/interceptor/JwtInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/service/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/constant/TokenConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/utils/RedisPrefixUtils.java" afterDir="false" />
+    <list default="true" id="721542a7-44f2-4a3d-89f3-9b969cc81ced" name="Default Changelist" comment="添加双token,以及双token刷新">
+      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/service/VerificationCodeSerivce.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/service/VerificationCodeSerivce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/remote/ServicePassengerUserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/mashibing/apipassenger/remote/ServicePassengerUserClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/service/VerificationCodeSerivce.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/mashibing/apipassenger/service/VerificationCodeSerivce.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/constant/CommonStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/dto/TokenResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/dto/TokenResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/utils/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/utils/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/dto/PassengerUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/mashibing/common/dto/PassengerUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/mapper/PassengerUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/mapper/PassengerUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/service/UserSerivce.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/mashibing/servicepassenger/service/UserSerivce.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,8 +177,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ApiPassengerApplication" />
-        <item itemvalue="Spring Boot.VerificationCodeController" />
         <item itemvalue="Spring Boot.ServicePassengerUserApplication" />
+        <item itemvalue="Spring Boot.VerificationCodeController" />
         <item itemvalue="Application.JwtUtil" />
         <item itemvalue="JUnit.NumberCodeTest.test" />
       </list>
@@ -217,7 +214,7 @@
       <workItem from="1683686507628" duration="11907000" />
       <workItem from="1683704902906" duration="4369000" />
       <workItem from="1683765811998" duration="9453000" />
-      <workItem from="1683783062787" duration="4119000" />
+      <workItem from="1683783062787" duration="7582000" />
     </task>
     <task id="LOCAL-00001" summary="添加验证码骨架">
       <created>1683336286196</created>
@@ -303,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683768271299</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="添加双token,以及双token刷新">
+      <created>1683787474196</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683787474196</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +337,8 @@
     <MESSAGE value="添加服务用户人" />
     <MESSAGE value="添加jwt生成token" />
     <MESSAGE value="校验用户成功后返回token" />
-    <option name="LAST_COMMIT_MESSAGE" value="校验用户成功后返回token" />
+    <MESSAGE value="添加双token,以及双token刷新" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加双token,以及双token刷新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -2,7 +2,7 @@ package com.mashibing.servicepassenger.service;
 
 import com.mashibing.common.constant.CommonStatusEnum;
 import com.mashibing.common.dto.ResponseResult;
-import com.mashibing.servicepassenger.dto.PassengerUser;
+import com.mashibing.common.dto.PassengerUser;
 import com.mashibing.servicepassenger.mapper.PassengerUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,7 +28,6 @@ public class UserSerivce {
      */
     public ResponseResult logOrRegsiter(String passengerPhone){
         Map<String,Object> map =new HashMap<>();
-        int insert = 0;
         map.put("passenger_phone",passengerPhone);
         List<PassengerUser> passengerUsers = passengerUserMapper.selectByMap(map);
         if(CollectionUtils.isEmpty(passengerUsers)){
@@ -44,5 +43,20 @@ public class UserSerivce {
         }
 
         return ResponseResult.success();
+    }
+
+    public ResponseResult getUser(String passengerPhone){
+        Map<String,Object> map =new HashMap<>();
+        map.put("passenger_phone",passengerPhone);
+        List<PassengerUser> passengerUsers = passengerUserMapper.selectByMap(map);
+
+        if(CollectionUtils.isEmpty(passengerUsers)){
+            return ResponseResult.failed(CommonStatusEnum.USER_ERROR.getCode(),CommonStatusEnum.USER_ERROR.getValue());
+        }else{
+            PassengerUser user = passengerUsers.get(0);
+            return ResponseResult.success(user);
+        }
+
+
     }
 }

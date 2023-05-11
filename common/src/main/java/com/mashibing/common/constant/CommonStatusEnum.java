@@ -7,6 +7,13 @@ public enum CommonStatusEnum {
     * */
     TOKEN_ERROR(1199,"token错误"),
 
+
+    //用户错误 1200-1299
+    /*
+     * 用户不存在
+     * */
+    USER_ERROR(1299,"当前用户不存在"),
+
     //验证码错误提示:1000-1099
     /*
      * 验证码不正确
